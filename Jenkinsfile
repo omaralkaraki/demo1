@@ -10,6 +10,7 @@ pipeline {
     stage('Testing') {
       steps {
         echo 'Testing Completed'
+        timeout(time: 5)
       }
     }
 
@@ -18,6 +19,6 @@ pipeline {
         echo 'Deploying Completed'
       }
     }
- 
+
   }
 }
